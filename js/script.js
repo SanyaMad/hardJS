@@ -1,8 +1,6 @@
 'use strict';
 
-let lang = prompt('РУССКИЙ НАДА?', 'ru');
-
-console.log(lang)
+let lang = prompt('Выбор языка (ru,en)', 'ru');
 
 if (lang === "ru"){
     console.log('Воскресенье' + " " + 'Понедельник' + " " + 'Вторник' + " " + 'Среда' + " " + 'Четверг' + " " + 'Пятница' + " " + 'Суббота')
@@ -36,7 +34,5 @@ en:['Monday' + " " + 'Tuesday' + " " + 'Wednesday' + " " + 'Thursday' + " " + 'F
 console.log(langWeek[lang]);
 
 
-let namePerson = "Артем Александр";
-namePerson = "Артем" ? console.log("директор") : console.log("студент");
-namePerson = "Александр" ? console.log("преподаватель") : console.log("студент");
-namePerson = "ДругоеИмя" ? console.log("студент") : console.log("не знаю кто");
+let namePerson = prompt('Введите Имя');
+console.log((namePerson === 'Артем') ? 'директор' : (namePerson === 'Александр') ? 'преподаватель' : 'студент');
